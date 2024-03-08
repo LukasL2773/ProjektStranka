@@ -1,0 +1,15 @@
+/* Nastavenie obrázka pozadia pre banner */
+section.banner {
+  background-image: url('../img/banner.jpg');
+  /* Rozmiestnenie obrázka pozadia */
+  background-size: cover;
+  background-position: center;
+  /* Zakázanie opakovania obrázka */
+  background-repeat: no-repeat;
+  /* Výška banneru na 45% výšky viewportu */
+  height: 45vh;
+  /* Použitie flexboxu pre zarovnanie obsahu na strede */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

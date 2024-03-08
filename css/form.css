@@ -1,0 +1,24 @@
+/* Štýl pre textové a e-mailové vstupné polia */
+input[type="text"],
+input[type="email"] {
+    border: 2px solid black; /* Hrúbka a farba ohraničenia */
+    height: 25px; /* Výška vstupného poľa */
+    width: 250px; /* Šírka vstupného poľa */
+    margin-bottom: 10px; /* Medzera pod vstupným poľom */
+}
+
+/* Štýl pre textové pole */
+textarea {
+    border: 2px solid black; /* Hrúbka a farba ohraničenia */
+    height: 150px; /* Výška textového poľa */
+    width: 250px; /* Šírka textového poľa */
+    margin-bottom: 10px; /* Medzera pod textovým poľom */
+}
+
+/* Štýl pre tlačidlo odoslať */
+input[type="submit"] {
+    margin-top: 10px; /* Medzera nad tlačidlom */
+    background-color: black; /* Farba pozadia tlačidla */
+    color: white; /* Farba textu na tlačidle */
+    padding: 10px 15px; /* Odstup textu od okraja tlačidla */
+}

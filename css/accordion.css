@@ -1,0 +1,36 @@
+/* Skrytie odpovedí na otázky */
+.accordion .answer {
+    display: none;
+}
+
+/* Štýl otázok */
+.question {
+    background-color: #e8e8e8;
+    color: black;
+    padding: 2%;
+}
+
+/* Zobrazenie odpovedí pri aktívnej otázke */
+.accordion.active .answer {
+    display: block;
+    background-color: #e8e8e8;
+    color: black;
+    padding: 2%;
+}
+
+/* Pridanie plusa pred neaktívnou otázkou */
+.question::before {
+    content: '+ ';
+}
+
+/* Zmena farby otázky po najazdení myšou alebo pri aktívnej otázke */
+.question:hover,
+.accordion.active .question {
+    background-color: #bfbcbc;
+    cursor: pointer;
+}
+
+/* Zmena symbolu na mínus pri aktívnej otázke */
+.accordion.active .question::before {
+    content: '- ';
+}

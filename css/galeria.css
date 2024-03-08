@@ -1,0 +1,44 @@
+/* Základné štýly pre celú stránku */
+body {
+  font-family: Arial, sans-serif; /* Použitá písma pre celú stránku */
+  margin: 0; /* Odstránenie okrajov okolo tela stránky */
+  padding: 0; /* Odstránenie vnútorných okrajov tela stránky */
+}
+
+/* Štýly pre kontajner s fotkami */
+.fotky {
+  display: flex; /* Použitie flexbox modelu pre usporiadanie fotiek */
+  flex-wrap: wrap; /* Nový riadok, ak sa fotky nezmestia na šírku */
+}
+
+/* Štýly pre jednotlivé fotky v galérii */
+.fotky img {
+  width: 22%; /* Šírka fotky (22% zo šírky kontajnera) */
+  margin: 1%; /* Medzera medzi fotkami */
+  cursor: pointer; /* Kurzor ako indikácia, že fotku je možné kliknúť */
+  position: relative; /* Relatívna pozícia pre overlay */
+}
+
+/* Štýly pre overlay (zobrazenie zväčšenej fotky) */
+.overlay {
+  display: none; /* Overlay je skrytý z predvolenia */
+  position: fixed; /* Pevné umiestnenie overlay na stránke */
+  top: 0; /* Overlay od začiatku stránky hore */
+  left: 0; /* Overlay od začiatku stránky vľavo */
+  width: 100%; /* Overlay zaberá 100% šírky stránky */
+  height: 100%; /* Overlay zaberá 100% výšky stránky */
+  background: rgba(0, 0, 0, 0.7); /* Priesvitné čierne pozadie */
+}
+
+/* Štýly pre zväčšenú fotku v overlay */
+#zoomed-in-image {
+  max-width: 80%; /* Maximálna šírka zväčšenej fotky (80% z overlay) */
+  max-height: 50vh; /* Maximálna výška zväčšenej fotky (50% z výšky obrazovky) */
+  width: auto; /* Automatická šírka pre zachovanie pomeru strán */
+  height: auto; /* Automatická výška pre zachovanie pomeru strán */
+  position: absolute; /* Absolútna pozícia pre presné umiestnenie */
+  top: 60%; /* 60% od vrchu overlay */
+  left: 50%; /* 50% od ľavého okraja overlay */
+  transform: translate(-50%, -50%); /* Centrovanie v strede overlay */
+  border-radius: 5px; /* Zaoblené rohy pre zväčšenú fotku */
+}
