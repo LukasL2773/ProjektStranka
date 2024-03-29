@@ -18,7 +18,12 @@
     <button onclick="confirmCookies()">Potvrdiť</button>
 
   </div>
-  <?php include 'header.php'; ?>
+  <?php
+  $file_path = "parts/header.php";
+  if(!include($file_path)) {
+    echo"Failed to include $file_path";
+  }
+  ?>
     
   <main>
     <section class="main-banner">
@@ -141,7 +146,12 @@
     </section>
   </main>
     
-  <?php include 'footer.php'; ?>
+  <?php
+  $file_path = "parts/footer.php";
+  if(!include($file_path)) {
+    echo"Failed to include $file_path";
+  }
+  ?>
   <script src="js/cookies.js" defer></script>
     <script src="js/accordion.js"></script>
     <script src="js/menu.js"></script>
