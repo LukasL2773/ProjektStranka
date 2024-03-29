@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<?php include 'header.php'; ?>
+<?php
+  $file_path = "parts/header.php";
+  if(!include($file_path)) {
+    echo"Failed to include $file_path";
+  }
+  ?>
     
   <main>
     <section class="banner">
@@ -41,7 +46,12 @@
     </section>
   </main>
     
-  <?php include 'footer.php'; ?>
+  <?php
+  $file_path = "parts/footer.php";
+  if(!include($file_path)) {
+    echo"Failed to include $file_path";
+  }
+  ?>
     <script src="js/accordion.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/zoom.js"></script>
