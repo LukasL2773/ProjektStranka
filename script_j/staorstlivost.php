@@ -59,34 +59,7 @@
     </section>
   </div>
   </main>
-  <footer class="container bg-dark text-white">
-    <div class="row">
-      <div class="col-25">
-        <h4>Kto som</h4>
-        <p>Volám sa Lukáš Lacina</p>
-        <p>Som študent na VŠ UKF v Nitre odbor Aplikovaná informatika</p>
-        <p>Pochádzam z Nitry, mám 19 rokov a stránka je určená na záverečný projekt</p>
-
-      </div>
-      <div class="col-25 text-left">
-        <h4>Kontakt</h4>
-        <p><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:lukilacina@gmail.com"> lukilacina@gmail.com</a></i></p>
-        <p><i class="fa fa-phone" aria-hidden="true"><a href="tel:0905485111"> 0905485111</a></i></p>
-      </div>
-      <div class="col-25">
-        <h4>Odkazy na:</h4>
-        <p><a href="index.html">Domov</a></p>
-        <p><a href="staorstlivost.html">Starostlivosť</a></p>
-        <p><a href="pomoc.html">Pomoc</a></p>
-      </div>
-      <div class="col-25">
-        <img src="img/LogoWh.png" alt="">
-       </div>
-    </div>
-    <div class="copyright">
-      <p>Copyright &copy; 2023 Lukáš Lacina. All rights reserved. </p>
-    </div>
-  </footer>
+  <?php include 'footer.php'; ?>
   <script src="js/accordion.js"></script>
   <script src="js/menu.js"></script>
 </body>
