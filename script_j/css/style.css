@@ -124,12 +124,13 @@ header{
 .col-25 p:hover a{
   text-decoration: underline;
 }
-.col-25 img{
-  display: block;
+.col-25 img {
   max-width: 100%;
+  height: auto;
+  display: block;
   margin: auto;
-  height: 80%;
 }
+
 .row .col-33{
   width:33%;
 }
@@ -137,11 +138,11 @@ header{
   width:50%;
 }
 .col-50 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px; 
 }
 .row .col-50 p{
   margin-left: 22px;
@@ -180,6 +181,11 @@ header{
 footer p a{
   text-decoration: none;
   color:white;
+}
+
+.footer-logo {
+  max-width: 100%; 
+  height: auto; 
 }
 @media screen and (max-width: 600px) {
   #zoomed-in-image {
@@ -278,16 +284,18 @@ footer p a{
   to {opacity: 1}
 }
 
-.footer-logo {
-  max-width: 100px; /* nastaviť maximálnu šírku pre logo */
-}
+
 
 
 @media screen and (max-width: 600px) {
   .footer-logo {
-    max-width: 80px; /* nastaviť menšiu maximálnu šírku pre logo pre menšie obrazovky */
+    max-width: 100%;
+    height: auto;
   }
 }
+
+
+
 
 
 
