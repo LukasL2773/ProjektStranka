@@ -31,7 +31,7 @@
           <p><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:lukilacina@gmail.com"> lukilacina@gmail.com</a></i></p>
           <p>Zákaznícka info linka funguje nonstop.</p>
           <p><i class="fa fa-phone" aria-hidden="true"><a href="tel:0905485111"> 0905485111</a></i></p>
-        <form id="contact" action="thankyou.html">
+        <form id="contact" action="thankyou.php">
           <input type="text" placeholder="Vaše meno" id="meno" required><br>
           <input type="email" placeholder="Váš email" id="email" required><br>
           <textarea name="" placeholder="Vaša správa" id="sprava"></textarea><br>

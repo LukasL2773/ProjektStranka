@@ -49,42 +49,12 @@
         </div>
       </div>
     </section>
-    <section class="container">
-    <h2>Ako sa starať o mačky ? </h2>
-    <div class="accordion">
-      <div class="question">1. Kvalitná strava</div>
-      <div class="answer">Poskytnite svojej mačke vyváženú stravu, ktorá zabezpečí všetky nutričné potreby. <br>Môžete sa poradiť s veterinárom ohľadom správnej stravy pre vek a zdravie vášho maznáčika.</div>
-    </div>
-    <div class="accordion">
-      <div class="question">2. Pitný režim</div>
-      <div class="answer">Mačky potrebujú dostatok čistej vody. <br>Uistite sa, že vaša mačka má vždy dostatok vody.</div>
-    </div>
-    <div class="accordion">
-      <div class="question">3. Veterinárna starostlivosť</div>
-      <div class="answer">Pravidelné návštevy veterinára sú kľúčové pre udržanie zdravia mačky. <br>Očkovanie, preventívna starostlivosť proti parazitom sú veľmi dôležité.</div>
-    </div>
-    <div class="accordion">
-      <div class="question">4. Hygiena srsti</div>
-      <div class="answer">Česanie mačky podporuje zdravú pokožku a srst, zároveň umožňuje odhaliť prípadné problémy s kožou alebo parazitmi. <br>Niektoré mačky si tiež vyžadujú pomoc pri starostlivosti o pazúry.</div>
-    </div>
-    <div class="accordion">
-      <div class="question">5. Hra a stimulácia</div>
-      <div class="answer">Mačky sú aktívne zvieratá, ktoré potrebujú stimuláciu a fyzickú aktivitu. <br>Poskytnite im dostatok hračiek, alebo sa s nimi zahrajte, aby si udržali duševnú aj fyzickú formu.</div>
-    </div>
-    <div class="accordion">
-      <div class="question">6. Čisté toalety</div>
-      <div class="answer">Zabezpečte čisté a dostupné miesto na vykonávanie potreby. <br>Mačky sú čistotné zvieratá a nepohodlie s toaletou môže viesť k nežiaducemu správaniu.</div>
-    </div>
-    <div class="accordion">
-      <div class="question">7. Láska a pozornosť</div>
-      <div class="answer">Mačky majú radi pozornosť a lásku svojich majiteľov. <br>Venovať im čas a nežnosť je dôležité pre ich emocionálne blaho.</div>
-    </div>
-    <div class="accordion">
-      <div class="question">8. Starostlivosť</div>
-      <div class="answer">Súčasťou starostlivosti o mačky je aj poznanie ich jedinečnej povahy a individuálnych potrieb. <br>Pozornosť k ich správaniu a rýchle reagovanie na akékoľvek zmeny môže viesť k šťastnému a zdravému životu vášho maznáčika. <br>V prípade pochybností alebo otázok o zdraví mačky vždy konzultujte s veterinárnym lekárom.</div>
-    </div>
-      </section>
-    </section>
+    <?php
+  $file_path = "parts/otazky.php";
+  if(!include($file_path)) {
+    echo"Failed to include $file_path";
+  }
+  ?>  
     <section class="container">
       <h2>Zaujímavosti o mačkách</h2>
       <div class="row">
@@ -134,7 +104,7 @@
           <p><i class="fa fa-envelope" aria-hidden="true"><a href="mailto:lukilacina@gmail.com"> lukilacina@gmail.com</a></i></p>
           <p>Zákaznícka info linka funguje nonstop.</p>
           <p><i class="fa fa-phone" aria-hidden="true"><a href="tel:0905485111"> 0905485111</a></i></p>
-        <form id="contact" action="thankyou.html">
+        <form id="contact" action="thankyou.php">
           <input type="text" placeholder="Vaše meno" id="meno" required><br>
           <input type="email" placeholder="Váš email" id="email" required><br>
           <textarea name="" placeholder="Vaša správa" id="sprava"></textarea><br>
@@ -145,12 +115,7 @@
       </div>
     </section>
   </main>
-  <?php
-  $file_path = "parts/otazky.php";
-  if(!include($file_path)) {
-    echo"Failed to include $file_path";
-  }
-  ?>  
+ 
   <?php
   $file_path = "parts/footer.php";
   if(!include($file_path)) {
