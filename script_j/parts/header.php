@@ -25,6 +25,7 @@
           <li><a href="zaujimavosti.php">Zaujímavosti</a></li>
           <li><a href="galeria.php">Galéria</a></li>
           <li><a href="pomoc.php">Pomoc</a></li>
+          <li><a href="signin.php">Prihlásiť/Registrovať</a></li>
       </ul>
       <a class="hamburger" id="hamburger">
           <i class="fa fa-bars"></i>
