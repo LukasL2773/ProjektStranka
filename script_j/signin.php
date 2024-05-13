@@ -27,6 +27,11 @@
     </section>
     <section class="container">
         <div class="row">
+        <?php if (isset($_GET['success']) && $_GET['success'] == 1): ?>
+    <div class="success-message">
+        Úspešne ste sa registrovali!
+    </div>
+<?php endif; ?>
             <div class="form-container register-form">
                 <h2 class="form-title">Registrácia</h2>
                 <form method="post" action="db/register.php" id="CreateAccount">
@@ -50,7 +55,7 @@
                 <h2 class="form-title">Prihlásenie</h2>
                 <form method="post" action="db/login.php" id="Login">
                     <div class="form-group">
-                        <label for="username">Používateľské meno:</label>
+                        <label for="username">Email:</label>
                         <input type="text" id="email" name="email" class="form-input">
                     </div>
                     <div class="form-group">
