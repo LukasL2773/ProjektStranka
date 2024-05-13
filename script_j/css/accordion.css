@@ -34,3 +34,7 @@
 .accordion.active .question::before {
     content: '- ';
 }
+
+.accordion.active .answer {
+    display: block;
+}

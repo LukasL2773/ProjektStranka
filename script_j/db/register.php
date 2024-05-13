@@ -5,17 +5,21 @@ require_once(__ROOT__.'/classes/Users.php');
 $username = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
+
 // Overenie údajov
 if (empty($username) || empty($email) || empty($password)) {
     die('Chyba: Všetky polia sú povinné!');
 }
-// Uloženie správy do databázy
+
+// Uloženie používateľa do databázy
 try {
     $user = new Users();
     $user->register($username, $email, $password);
-    return header('Location: ../thankyou.php');
-}catch (Exception $e){
+    // Presmerovanie naspäť na tú istú stránku s úspešnou správou
+    header('Location: ' . $_SERVER['HTTP_REFERER'] . '?success=1');
+    exit();
+} catch (Exception $e) {
     http_response_code(404);
-    die('Chyba pri odosielaní správy do databázy!');
+    die('Chyba pri registrácii: ' . $e->getMessage());
 }
-
+?>
