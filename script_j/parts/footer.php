@@ -29,7 +29,7 @@
       <div class="col-25">
         <h4>Odkazy na:</h4>
         <p><a href="index.php">Domov</a></p>
-        <p><a href="staorstlivost.php">Starostlivosť</a></p>
+        <p><a href="starostlivost.php">Starostlivosť</a></p>
         <p><a href="pomoc.php">Pomoc</a></p>
       </div>
       <div class="col-25">

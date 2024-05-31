@@ -63,7 +63,7 @@ class Users extends Database{
         session_start();
         session_unset(); // Vymazanie všetkých session premenných
         session_destroy();
-        header('Location: http://localhost/cvicnasablona/index.php');
+        header('Location: http://localhost/ProjektStranka/script_j/index.php');
         exit();
     }
     public function isAdmin(){

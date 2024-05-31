@@ -1,0 +1,35 @@
+{
+    "otazky": [
+      "1. Kvalitná strava",
+      "2. Pitný režim",
+      "3. Veterinárna starostlivosť",
+      "4. Hygiena srsti",
+      "5. Hra a stimulácia",
+      "6. Čisté toalety",
+      "7. Láska a pozornosť",
+      "8. Starostlivosť"
+    ],
+    "odpovede": [
+      "Poskytnite svojej mačke vyváženú stravu, ktorá zabezpečí všetky nutričné potreby. <br>Môžete sa poradiť s veterinárom ohľadom správnej stravy pre vek a zdravie vášho maznáčika.",
+      "Mačky potrebujú dostatok čistej vody. <br>Uistite sa, že vaša mačka má vždy dostatok vody.",
+      "Pravidelné návštevy veterinára sú kľúčové pre udržanie zdravia mačky. <br>Očkovanie, preventívna starostlivosť proti parazitom sú veľmi dôležité.",
+      "Česanie mačky podporuje zdravú pokožku a srst, zároveň umožňuje odhaliť prípadné problémy s kožou alebo parazitmi. <br>Niektoré mačky si tiež vyžadujú pomoc pri starostlivosti o pazúry.",
+      "Mačky sú aktívne zvieratá, ktoré potrebujú stimuláciu a fyzickú aktivitu. <br>Poskytnite im dostatok hračiek, alebo sa s nimi zahrajte, aby si udržali duševnú aj fyzickú formu.",
+      "Zabezpečte čisté a dostupné miesto na vykonávanie potreby. <br>Mačky sú čistotné zvieratá a nepohodlie s toaletou môže viesť k nežiaducemu správaniu.",
+      "Mačky majú radi pozornosť a lásku svojich majiteľov. <br>Venovať im čas a nežnosť je dôležité pre ich emocionálne blaho.",
+      "Súčasťou starostlivosti o mačky je aj poznanie ich jedinečnej povahy a individuálnych potrieb. <br>Pozornosť k ich správaniu a rýchle reagovanie na akékoľvek zmeny môže viesť k šťastnému a zdravému životu vášho maznáčika. <br>V prípade pochybností alebo otázok o zdraví mačky vždy konzultujte s veterinárnym lekárom."
+    ],
+  
+    "stranky": {
+      "index": ["css/style.css", "css/cookie.css", "css/accordion.css", "css/galeria.css", "css/banner.css"],
+      "starostlivost": ["css/style.css", "css/accordion.css", "css/galeria.css", "css/banner.css", "css/form.css"],
+      "zaujimavosti": ["css/style.css", "css/accordion.css", "css/galeria.css", "css/banner.css", "css/form.css"],
+      "galeria": ["css/style.css", "css/accordion.css", "css/galeria.css", "css/banner.css", "css/form.css" ],
+      "pomoc": ["css/style.css", "css/banner.css", "css/form.css", "css/galeria.css" ],
+      "thankyou": ["css/style.css", "css/banner.css", "css/form.css"],
+      "signin": ["css/style.css", "css/banner.css", "css/loginregister.css", "css/form.css", "css/galeria.css"]
+    }
+    }
+  
+  
+  

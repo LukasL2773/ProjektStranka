@@ -21,7 +21,7 @@
     <nav class="main-nav">
       <ul class="main-menu" id="main-menu">
           <li><a href="index.php">Domov</a></li>
-          <li><a href="staorstlivost.php">Starostlivosť</a></li>
+          <li><a href="starostlivost.php">Starostlivosť</a></li>
           <li><a href="zaujimavosti.php">Zaujímavosti</a></li>
           <li><a href="galeria.php">Galéria</a></li>
           <li><a href="pomoc.php">Pomoc</a></li>

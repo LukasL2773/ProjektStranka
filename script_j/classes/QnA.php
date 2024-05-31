@@ -21,12 +21,18 @@ class QnA extends Database {
         }
         $sql = "SELECT * FROM qna WHERE id = :id";
         $statement = $this->connection->prepare($sql);
-        $statement->bindParam(':id', $id);
+        $statement->bindParam(':id', $id, PDO::PARAM_INT);
         $statement->execute();
         // Získanie dát
         $row = $statement->fetch(PDO::FETCH_ASSOC);
+        if (!$row) {
+            echo 'Otázka s daným ID nebola nájdená.';
+            exit;
+        }
         return $row;
     }
+    
+    
     public function updateQnA($id, $question, $answer) {
         if (!is_numeric($id)) {
             echo 'ID otázky musí byť číslo.';

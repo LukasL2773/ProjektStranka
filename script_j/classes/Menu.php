@@ -15,17 +15,25 @@ private array $validateMenuTypes = ["header", "footer"];
                 'name' => 'Domov',
                 'path' => 'index.php',
             ],
-            'portfolio' => [
-                'name' => 'Portfólio',
-                'path' => 'portfolio.php',
+            'starostlivost' => [
+                'name' => 'Starostlivosť',
+                'path' => 'starostlivost.php',
             ],
-            'qna' => [
-                'name' => 'Q&A',
-                'path' => 'qna.php',
+            'zaujimavosti' => [
+                'name' => 'Zaujímavosti',
+                'path' => 'zaujimavosti.php',
             ],
-            'kontakt' => [
-                'name' => 'Kontakt',
-                'path' => 'kontakt.php',
+            'galeria' => [
+                'name' => 'Galéria',
+                'path' => 'galeria.php',
+            ],
+            'pomoc' => [
+                'name' => 'Pomoc',
+                'path' => 'pomoc.php',
+            ],
+            'prihlasit/registrovat' => [
+                'name' => 'Prihlásiť/Registrovať',
+                'path' => 'signin.php',
             ],
         ],
     ];
@@ -42,7 +50,7 @@ private array $validateMenuTypes = ["header", "footer"];
         if (isset($_SESSION['login'])) {
             echo '<li> <a href= db/logout.php >Prihlásený:' . $_SESSION['login'] . ' (' . $_SESSION['rola'] . ')'.'</a> </li> ';
         } else {
-            echo '<li> <a href="/cvicnasablona/signin.php">Prihlásiť/Registrovať</a> </li>';
+            echo '<li> <a href="http://localhost/ProjektStranka/script_j/signin.php">Prihlásiť/Registrovať</a> </li>';
         }
     }
 }
