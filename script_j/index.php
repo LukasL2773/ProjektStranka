@@ -51,10 +51,6 @@
       </div>
     </section>
     <?php
-  $file_path = "parts/otazky.php";
-  if(!include($file_path)) {
-    echo"Failed to include $file_path";
-  }
   ?>  
     <section class="container">
       <h2>Zaujímavosti o mačkách</h2>
